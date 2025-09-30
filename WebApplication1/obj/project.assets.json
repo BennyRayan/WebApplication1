@@ -75,19 +75,19 @@
     ]
   },
   "packageFolders": {
-    "/home/rayan/.nuget/packages/": {}
+    "/home/Rayan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rayan/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+      "projectUniqueName": "/home/Rayan/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "/home/rayan/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
-      "packagesPath": "/home/rayan/.nuget/packages/",
-      "outputPath": "/home/rayan/RiderProjects/WebApplication1/WebApplication1/obj/",
+      "projectPath": "/home/Rayan/RiderProjects/WebApplication1/WebApplication1/WebApplication1.csproj",
+      "packagesPath": "/home/Rayan/.nuget/packages/",
+      "outputPath": "/home/Rayan/RiderProjects/WebApplication1/WebApplication1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/rayan/.nuget/NuGet/NuGet.Config"
+        "/home/Rayan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -136,7 +136,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.8, 9.0.8]"
+            "version": "[9.0.9, 9.0.9]"
           }
         ],
         "frameworkReferences": {
@@ -147,7 +147,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.109/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

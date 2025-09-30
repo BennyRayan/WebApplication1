@@ -1,4 +1,4 @@
-namespace WebApplication1;
+namespace WebApplication1.Domain.Entities;
 
 public class Patient
 {
@@ -9,20 +9,22 @@ public class Patient
     public Patient(string name, DateTime dateOfBirth)
     {
         if (string.IsNullOrWhiteSpace(name))
-            throw new ArgumentNullException(nameof(name));
+            throw new ArgumentException(nameof(name));
         Name = name;
         DateOfBirth = dateOfBirth;
     }
 
-    public int Age()
+    public int GetAge()
     {
         var age = DateTime.Today.Year - DateOfBirth.Year;
-        if (DateOfBirth.Date > DateTime.Today.AddYears(-age)) age--;
+        DateTime DateOfBirthNorm = new DateTime(2024, DateOfBirth.Month, DateOfBirth.Day);
+        DateTime DateTodayNorm = new DateTime(2024, DateTime.Today.Month, DateTime.Today.Day);
+        if (DateOfBirthNorm > DateTodayNorm) age--;
         return age;
     }
 
     public bool IsMinor()
     {
-        return Age() < 18;
+        return GetAge() < 18;
     }
 }

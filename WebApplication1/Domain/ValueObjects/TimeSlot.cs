@@ -1,4 +1,4 @@
-namespace WebApplication1;
+namespace WebApplication1.Domain.ValueObjects;
 
 
 public record TimeSlot
@@ -8,8 +8,8 @@ public record TimeSlot
 
     public TimeSlot(DateTime startTime, DateTime endTime)
     {
-        if (endTime <= startTime)
-            throw new ArgumentException("End date must be greater than start date");
+        if ((endTime- startTime).TotalMinutes < 15)
+            throw new ArgumentException("End date must be greater than 15 minutes after start date");
         
         StartTime = startTime;
         EndTime = endTime;
